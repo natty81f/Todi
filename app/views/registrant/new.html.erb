@@ -1,0 +1,6 @@
+<%= form_for @registrant, url: register_path, method: :post do |f| %>
+
+	<%= f.text_field :email,  placeholder: "Your Email" %>
+		<%= f.submit "Register", id: "login-btn" %>
+	
+<% end %>

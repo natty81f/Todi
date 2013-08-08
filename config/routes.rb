@@ -4,8 +4,8 @@ Todi::Application.routes.draw do
   post  'register' => 'registrant#create'
 
   #Complete registration
-  get   'register/:code' => 'registrant#edit', as: :registration
-  put   'register/:code' => 'registrant#update'
+  get   'register/:code' => 'registrant#edit'
+  put   'register/:code' => 'registrant#update', as: :registration_complete
 
   # Login
   get     'login'  => 'session#new', as: :login
@@ -15,6 +15,6 @@ Todi::Application.routes.draw do
   get     'logout' => 'session#destroy', as: :logout
   delete  'logout' => 'session#destroy'
 
-  root 'site#index'
+  root 'site#index' 
 
 end
