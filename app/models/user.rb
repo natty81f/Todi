@@ -8,6 +8,7 @@ class User
   key :salt, String
   key :expires_at, Time
   key :website, String
+  timestamps!
   many :messages
 
 end
