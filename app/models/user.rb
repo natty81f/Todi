@@ -14,9 +14,11 @@ class User
   timestamps!
   many :messages
 
+  validate :validate_confirmation
+  
   def self.authenticate(email, password)
-    user = User.find_by(email: email)
-
+    user = User.find_by_email(email)
+    
     if user
       fish = BCrypt::Engine.hash_secret(password, user.salt)
       if user.fish == fish
@@ -25,9 +27,15 @@ class User
     end
     nil
   end
-
+  
   private
-
+  
+  def validate_confirmation
+    unless password == password_confirmation
+      errors.add( :password_confirmation, "Passwords do not match.")
+    end
+  end
+  
   def encrypt_password
     unless password.blank?
       self.salt = BCrypt::Engine.generate_salt

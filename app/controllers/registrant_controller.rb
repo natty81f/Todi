@@ -1,5 +1,6 @@
 class RegistrantController < ApplicationController
-	  def new
+
+	def new
     # Create a new registrant with same email, then display form
     @registrant = Registrant.new
   end
@@ -7,7 +8,7 @@ class RegistrantController < ApplicationController
   def create
     @registrant = Registrant.new(registrant_params)
     @registrant.code = SecureRandom.urlsafe_base64
-    @registrant.expires_at = Time.now + 8.hours
+    @registrant.expires_at = Time.now + 7.hours
 
     if @registrant.save
       RegistrantMailer.registrant_email(@registrant).deliver
