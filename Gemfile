@@ -26,7 +26,6 @@ group :development, :test do
 end
 
 gem 'sass-rails'
-gem 'zurb-foundation', '~> 4.0.0'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'turbolinks'

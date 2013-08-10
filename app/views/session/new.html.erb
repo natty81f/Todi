@@ -1,0 +1,11 @@
+<%= form_for :user, url: login_url, method: :post do |f| %>
+      <p>
+        <%= f.text_field :email, placeholder: "Your Email" %>
+      </p>
+      <p>
+        <%= f.password_field :password, placeholder: " Your Password" %>
+      </p>
+      <p>
+        <%= f.submit "Sign In", class: "btn btn-info" %>
+      </p>
+    <% end %>
