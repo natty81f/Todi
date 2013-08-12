@@ -63,3 +63,8 @@ nav>ul>li {
 textarea{
 	margin: 0 0 1em 0;
 }
+
+#form_text_header{
+	color: black;
+	text-decoration: underline;
+}
