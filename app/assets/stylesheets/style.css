@@ -1,0 +1,65 @@
+html,
+body {
+  font-size: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default; }
+
+header{
+ 	background: #F21F55;
+ 	height: 60px;
+ 	margin-bottom: 35px;
+ 	-webkit-box-shadow: 0px 6px 15px rgba(50, 50, 50, 0.32);
+  -moz-box-shadow: 0px 6px 15px rgba(50, 50, 50, 0.32);
+  box-shadow: 0px 6px 15px rgba(50, 50, 50, 0.32); } 
+
+nav.menu_right{
+	float: right;
+	font-size: 1.1em; }
+
+nav>ul>li {
+	display: block;
+	float: left;
+	color: white;
+	margin: 15px 17px 0 0; }
+
+.brand-message h2{
+	text-align: center;
+	margin-bottom: 50px;
+	font-family: 'Anton', sans-serif;
+	font-weight: normal; }
+
+.image-wrapper img{
+	display: block;
+	margin: 0 auto; }
+
+.image-wrapper h4{
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-weight: normal; }
+
+.form-area{
+	max-width: 32rem;
+	margin: 4rem auto 4rem; }
+
+.form-area h2{
+	font-family: 'Anton', sans-serif;
+	font-weight: normal; }
+
+.sign_in{
+	margin-top: 13px;}
+
+.forgot_password{
+	text-align: right;
+	font-size: .92em; }	
+
+textarea{
+	margin: 0 0 1em 0;
+}
