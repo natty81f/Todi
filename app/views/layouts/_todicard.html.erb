@@ -1,0 +1,23 @@
+<div class="form-area">	
+	<div class="small-6 columns">
+		<div class="sign"><img src="images/card_happy.png"></div>	
+	</div>
+
+	<div class="small-6 columns">
+		<div id="tw">
+			<h3>TELL THE WORLD OR YOUR FUTURE SELF</h3>
+		</div>
+	</div>
+	<!-- End of form header -->
+	<%= form_for @message, url: root_path, method: :post do |f| %>
+		<div class="row">
+			<div class="large-12 columns">
+  			<%= f.text_area :text, placeholder: "Spill your heart out!" %>
+			</div>
+		</div>
+
+		<div class="small-6 columns">
+  		<%= f.submit "SAVE", class: "button" %>
+  	</div>	
+  	
+	<% end %>

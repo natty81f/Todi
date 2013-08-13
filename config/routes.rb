@@ -15,6 +15,11 @@ Todi::Application.routes.draw do
   get     'logout' => 'session#destroy', as: :logout
   delete  'logout' => 'session#destroy'
 
+  # Message
+
+  get 'message' => 'messages#new'
+  post 'message' => 'messages#post'
+
   root 'site#index' 
 
 end

@@ -18,3 +18,16 @@
 //= require foundation.min
 //= require foundation.reveal
 //= require_tree .
+
+$(function() {
+	$('.reveal-modal').each(function(index, item) {
+		var id = $(item).attr('id');
+		$('[data-reveal-id='+id+']').click(function(event) {
+			$(item).foundation('reveal', 'open');
+			return false;
+		});
+	});
+	$('body').on('click', '.reveal-modal-bg, .close-reveal-modal', function(event){
+		$('.reveal-modal').foundation('reveal', 'close');
+	});
+});

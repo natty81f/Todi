@@ -5,17 +5,16 @@
 			
 
 	<div class="row">	
-			<div class="large-3 columns image-wrapper"><%= image_tag "happy.png" %><h4>HAPPY</h4></div>
-			<div class="large-3 columns image-wrapper"><%= image_tag "love.png" %><h4>LOVE</h4></div>
-			<div class="large-3 columns image-wrapper"><%= image_tag "omg.png" %><h4>OMG!!!</h4></div>
-			<div class="large-3 columns image-wrapper"><%= image_tag "grumpy.png" %><h4>GRUMPY</h4></div>	
+		<div class="large-3 columns image-wrapper">
+			<a href="#" data-reveal-id="hey"><%= image_tag "happy.png" %></a>
+			<h4>HAPPY</h4>
+		</div>	
 	</div>	
 
-	<div class="row">
-		<div class="large-3 columns image-wrapper"><%= image_tag "stoked.png" %><h4>STOKED!</h4></div>
-		<div class="large-3 columns image-wrapper"><%= image_tag "sad.png" %><h4>SAD</h4></div>
-		<div class="large-3 columns image-wrapper"><%= image_tag "tired.png" %><h4>TIRED</h4></div>
-		<div class="large-3 columns image-wrapper"><%= image_tag "confused.png" %><h4>CONFUSED</h4></div>
-	</div>
-
+				<div id="hey" class="reveal-modal">
+				  <%= render partial: "layouts/todicard" %>
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
 		
+	
+	

@@ -49,22 +49,20 @@ nav>ul>li {
 	max-width: 32rem;
 	margin: 4rem auto 4rem; }
 
-.form-area h2{
+.form-area h2, #tw h3{
 	font-family: 'Anton', sans-serif;
 	font-weight: normal; }
 
 .sign_in{
-	margin-top: 13px;}
+	margin-top: 13px; }
 
 .forgot_password{
 	text-align: right;
 	font-size: .92em; }	
 
 textarea{
-	margin: 0 0 1em 0;
-}
+	margin: 0 0 1em 0; }
 
 #form_text_header{
 	color: black;
-	text-decoration: underline;
-}
+	text-decoration: underline; }
