@@ -16,9 +16,12 @@ Todi::Application.routes.draw do
   delete  'logout' => 'session#destroy'
 
   # Message
-
   get 'message' => 'messages#new'
-  post 'message' => 'messages#post'
+  post 'message' => 'messages#create', as: :message_new 
+
+  resources :users do
+    resources :messages
+  end 
 
   root 'site#index' 
 

@@ -2,15 +2,15 @@ class User
   include MongoMapper::Document
 
   before_save :encrypt_password
-  attr_accessor :email, :password, :password_confirmation
+  attr_accessor :password, :password_confirmation
 
   key :username, String
   key :name, String
-  key :email, String
+  key :email, String, unique: true
   key :fish, String
   key :salt, String
   key :expires_at, Time
-  key :website, String
+  
   timestamps!
   many :messages
 
@@ -42,5 +42,4 @@ class User
       self.fish = BCrypt::Engine.hash_secret(password, self.salt)
     end
   end
-
 end

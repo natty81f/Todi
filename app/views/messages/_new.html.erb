@@ -4,12 +4,13 @@
 	</div>
 
 	<div class="small-6 columns">
+		<%= @current_user %>
 		<div id="tw">
 			<h3>TELL THE WORLD OR YOUR FUTURE SELF</h3>
 		</div>
 	</div>
 	<!-- End of form header -->
-	<%= form_for @message, url: root_path, method: :post do |f| %>
+	<%= form_for :message, url: message_new_path, method: :post do |f| %>
 		<div class="row">
 			<div class="large-12 columns">
   			<%= f.text_area :text, placeholder: "Spill your heart out!" %>
