@@ -12,13 +12,15 @@
 	<!-- End of form header -->
 	<%= form_for @message, url: user_messages_path(user), method: :post do |f| %>
 		<div class="row">
+
 			<div class="large-12 columns">
   			<%= f.text_area :text, placeholder: "Spill your heart out!" %>
 			</div>
+
 		</div>
 
 		<div class="small-6 columns">
-			<input type="hidden" value="" id="emoticon" name="emoticon">
+			<input type="hidden" value="" id="emotion_type" name="message[emotion_type]">
   		<%= f.submit "SAVE", class: "button" %>
   	</div>	
   	

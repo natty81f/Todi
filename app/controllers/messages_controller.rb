@@ -40,7 +40,7 @@ class MessagesController < ApplicationController
   end
   
   def message_params
-    params.require(:message).permit( :text )
+    params.require(:message).permit( :text, :emotion_type )
   end
 
 end
