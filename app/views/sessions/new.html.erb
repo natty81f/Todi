@@ -10,7 +10,7 @@
           <div class="sign_in">Don't have an account? <%= link_to 'Sign Up', register_path, id: "form_text_header" %></div>
         </div>
 
-        <%= form_for :user, url: login_url, method: :post do |f| %>
+        <%= form_for :session, url: login_path, method: :post do |f| %>
           <div class="large-12 columns">
             <%= f.text_field :email, placeholder: "Your Email" %>
           </div>

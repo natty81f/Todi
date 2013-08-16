@@ -4,25 +4,23 @@ Todi::Application.routes.draw do
   post  'register' => 'registrant#create'
 
   #Complete registration
-  get   'register/:code' => 'registrant#edit'
-  put   'register/:code' => 'registrant#update', as: :registration_complete
+  get   'register/:code' => 'registrant#edit', as: :registration_complete
+  put   'register/:code' => 'registrant#update'
 
   # Login
-  get     'login'  => 'session#new', as: :login
-  post    'login'  => 'session#create'
+  get     'login'  => 'sessions#new', as: :login
+  post    'login'  => 'sessions#create'
 
   # Logout
-  get     'logout' => 'session#destroy', as: :logout
-  delete  'logout' => 'session#destroy'
+  get     'logout' => 'sessions#destroy', as: :logout
+  delete  'logout' => 'sessions#destroy'
 
-  # Message
-  get 'message' => 'messages#new'
-  post 'message' => 'messages#create', as: :message_new 
 
   resources :users do
-    resources :messages
+    resources :messages, except: [:index]  
   end 
 
   root 'site#index' 
 
 end
+ 

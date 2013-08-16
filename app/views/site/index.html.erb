@@ -6,13 +6,17 @@
 
 	<div class="row">	
 		<div class="large-3 columns image-wrapper">
-			<a href="#" data-reveal-id="hey"><%= image_tag "happy.png" %></a>
+			<a href="" data-reveal-id="msg-modal" data-emoticon="happy"><%= image_tag "happy.png" %></a>
 			<h4>HAPPY</h4>
+		</div>
+		<div class="large-3 columns image-wrapper">
+			<a href="" data-reveal-id="msg-modal" data-emoticon="sad"><%= image_tag "sad.png" %></a>
+			<h4>SAD</h4>
 		</div>	
 	</div>	
 
-				<div id="hey" class="reveal-modal">
-				  <%= render partial: "messages/new" %>
+				<div id="msg-modal" class="reveal-modal">
+				  <%= render partial: "messages/new", locals: { user: @user , message: @message} %>
 				  <a class="close-reveal-modal">&#215;</a>
 				</div>
 		

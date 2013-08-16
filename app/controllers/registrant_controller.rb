@@ -55,9 +55,7 @@ class RegistrantController < ApplicationController
     	:password, 
     	:password_confirmation,
     	:username,
-    	:name,
-    	:website
- 
-     )
+    	:name
+      )
   end
 end

@@ -23,6 +23,8 @@ $(function() {
 	$('.reveal-modal').each(function(index, item) {
 		var id = $(item).attr('id');
 		$('[data-reveal-id='+id+']').click(function(event) {
+			var emoticon = event.currentTarget.dataset.emoticon;
+			$('#emoticon').val(emoticon);
 			$(item).foundation('reveal', 'open');
 			return false;
 		});
