@@ -6,5 +6,12 @@ class SiteController < ApplicationController
 		@message = Message.new
 	end
 
+	# GET / - Me Page
+	def new
+	end	
+
+	def me
+		@user = current_user
+	end
 
 end

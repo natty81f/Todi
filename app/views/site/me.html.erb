@@ -1,0 +1,25 @@
+<%= render partial: "layouts/header" %>
+
+
+<div class="me-message"><h2>THIS IS ME!</h2></div>
+
+<div class="row">	
+	<div class="findby"><h2>Find by Todi:</h2></div>
+
+
+	<%= link_to image_tag("card_happy.png", class: "mini_todi"),user_message_path(@user.id, @user.messages)  %>
+	
+
+
+
+
+
+	<%= link_to image_tag("card_love.png", class: "mini_todi")  %>
+	<%= link_to image_tag("card_omg.png", class: "mini_todi")  %>
+	<%= link_to image_tag("card_sad.png", class: "mini_todi")  %>
+	<%= link_to image_tag("card_grumpy.png", class: "mini_todi")  %>
+	<%= link_to image_tag("card_confused.png", class: "mini_todi")  %>
+	<%= link_to image_tag("card_tired.png", class: "mini_todi")  %>
+	<%= link_to image_tag("card_stoked.png", class: "mini_todi")  %>
+
+</div>	

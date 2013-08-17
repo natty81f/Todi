@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
 
-  before_action :get_user # we'll need the parent design
+  before_action :get_user # we'll need the parent user
   before_action :get_message, except: [:index, :create]
 
 	def new
@@ -24,6 +24,13 @@ class MessagesController < ApplicationController
   end
 
 
+# New stuff
+  def show
+    @message = @user.messages.find(params[:id])
+  end  
+# End of new stuff
+
+
   private
 
   def get_user
@@ -33,8 +40,7 @@ class MessagesController < ApplicationController
 
   def get_message
     if @user
-      # We get the message from the user's message array, so we
-      # KNOW that this message is embedded in the right user.
+      
       head :not_found unless @message = @user.messages.find(params[:id])
     end
   end

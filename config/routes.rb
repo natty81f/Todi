@@ -15,6 +15,8 @@ Todi::Application.routes.draw do
   get     'logout' => 'sessions#destroy', as: :logout
   delete  'logout' => 'sessions#destroy'
 
+  get      'me'   => 'site#me'
+
 
   resources :users do
     resources :messages, except: [:index]  

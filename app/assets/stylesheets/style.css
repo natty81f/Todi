@@ -30,7 +30,7 @@ nav>ul>li {
 	color: white;
 	margin: 15px 17px 0 0; }
 
-.brand-message h2{
+.brand-message h2, .me-message h2{
 	text-align: center;
 	margin-bottom: 50px;
 	font-family: 'Anton', sans-serif;
@@ -78,4 +78,12 @@ li{
 	list-style: none; }
 
 nav ul li {
-	background: #F21F55; }	
+	background: #F21F55; }
+
+.findby h2{
+	margin-bottom: 25px;
+	font-family: Georgia, sans-serif;
+	font-style: italic; }	
+
+.mini_todi{
+	margin: 20px; }	
