@@ -3,6 +3,11 @@ class MessagesController < ApplicationController
   before_action :get_user # we'll need the parent user
   before_action :get_message, except: [:index, :create]
 
+  def index
+  # @message = @user.messages.find_by_emotion_type(params[:emotion_type])
+    @messages = current_user.messages.select { |m| m.emotion_type == params[:emotion_type] }
+  end
+
 	def new
     if @user
        @message = @user.messages.build
@@ -24,11 +29,8 @@ class MessagesController < ApplicationController
   end
 
 
-# New stuff
-  def show
-    @message = @user.messages.find(params[:id])
+  def show  
   end  
-# End of new stuff
 
 
   private

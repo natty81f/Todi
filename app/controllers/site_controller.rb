@@ -7,9 +7,6 @@ class SiteController < ApplicationController
 	end
 
 	# GET / - Me Page
-	def new
-	end	
-
 	def me
 		@user = current_user
 	end

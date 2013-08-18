@@ -19,7 +19,7 @@ Todi::Application.routes.draw do
 
 
   resources :users do
-    resources :messages, except: [:index]  
+    resources :messages 
   end 
 
   root 'site#index' 
