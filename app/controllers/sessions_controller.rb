@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     puts params[:user_id]
     
     session[:user_id] = user.id
-    redirect_to root_path, notice: "Logged in!"
+    redirect_to root_path, notice: "You've successfully logged in!"
   else
     render :new
   end
@@ -17,6 +17,6 @@ end
 
 def destroy
   session[:user_id] = nil
-  redirect_to root_path, notice: "Logged out!"
+  redirect_to root_path, notice: "You've successfully logged out!"
 end
 end

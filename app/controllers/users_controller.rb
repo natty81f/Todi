@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 	def update
 		@user = User.find_by_id params[:id]
 		@user.update_attributes(user_params)
-		redirect_to root_url, notice: "You have updated your profile!"
+		redirect_to root_url, notice: "You've successfully updated your account!"
 	end	
 
 
