@@ -80,10 +80,25 @@ li{
 nav ul li {
 	background: #F21F55; }
 
-.findby h2{
-	margin-bottom: 25px;
+.findby h3{
+	margin: 0 0 25px 25px;
 	font-family: Georgia, sans-serif;
 	font-style: italic; }	
 
 .mini_todi{
-	margin: 20px; }	
+	margin: 21px; }	
+
+/*	Me Page Starts------------------------*/
+.find_by_results h3, .find_by_results h4{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	font-family: Georgia, sans-serif;
+	font-style: italic; }
+
+.results{
+	margin-bottom: 30px; }
+
+.user-details{
+	color: #03A4EC;
+	display: inline;
+}

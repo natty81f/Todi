@@ -1,9 +1,10 @@
 <header>
 	<div class="row">	
-		<%= link_to image_tag("brand.png", class: "brand"), root_path %>
+		<%= link_to image_tag("brand.png", class: "brand"), root_path(@user) %>
+	
 			<nav class="menu_right">
 				<ul>
-					<li>Settings</li>
+					<li>Profile</li>
 					<li><%= link_to 'Me', me_path %></li>
 					<li><%= link_to 'Sign In', login_path %>
 						<ul>

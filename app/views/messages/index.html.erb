@@ -1,6 +1,23 @@
-<% @messages.each do |message| %>
-	<p>
-		<%= message.emotion_type %>:
-		<%= message.text %>
-	</p>
-<% end %>
+<%= render partial: "layouts/header" %>
+
+<div class="row">	
+
+	<div class="large-12 columns">
+		<div class="find_by_results">
+				<h3>Hello. <%= @user.username %>!</h3>
+				<h4>Here are your Todie messages:</h4>
+				
+					<% @messages.each do |message| %>
+						
+						<div class="results">
+							<%= message.created_at %>
+							<div class="user-details">
+							<%= message.emotion_type %></div> mood:   
+							<%= message.text %>
+						</div>
+						
+					<% end %>
+				</div>
+		</div>
+	</div>		
+</div>
