@@ -17,7 +17,6 @@ Todi::Application.routes.draw do
 
   get      'me'   => 'site#me'
 
-
   resources :users do
     resources :messages 
   end 

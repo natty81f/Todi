@@ -1,0 +1,37 @@
+<%= render partial: "layouts/header" %>
+
+<section>
+	<div class="form-area">	
+			<div class="large-12 columns">
+				<div class="account"><h2>ACCOUNT</h2></div>
+			</div>	
+
+			<%= form_for @user, url: user_path(@user), method: :put do |f| %>
+				<div class="large-12 columns">
+				<%= f.text_field :email , placeholder: @user.email %>
+				</div>
+
+				<div class="large-12 columns">
+				<%= f.password_field :password, placeholder: "New Password" %>
+				</div>
+
+				<div class="large-12 columns">
+				<%= f.password_field :password_confirmation, placeholder: "Confirm New Password" %>
+				</div>
+
+				<div class="large-12 columns">
+				<%= f.text_field 		:username, placeholder: "Username" %>
+				</div>
+				
+				<div class="large-12 columns">
+				<%= f.text_field 		:name, placeholder: "Full Name" %>
+				</div>
+
+				<div class="large-12 columns">
+				<%= f.submit "SAVE CHANGES", class: "button" %>
+				</div>
+					
+			<% end %>
+
+	</div>	
+</section>		

@@ -53,7 +53,7 @@ nav>ul>li {
 	font-family: 'Anton', sans-serif;
 	font-weight: normal; }
 
-.sign_in{
+.sign_in, .account{
 	margin-top: 13px; }
 
 .forgot_password{
