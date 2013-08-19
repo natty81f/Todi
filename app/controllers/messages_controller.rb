@@ -15,12 +15,11 @@ class MessagesController < ApplicationController
   end
 
   def create
-    puts "hello"
     # @message = current_user.messages << Message.new(message_params)
     if @user
       if @message = @user.messages << Message.new(message_params)
         @user.save
-        redirect_to root_path
+        redirect_to root_path, notice: "You've created a new message!."
       else
         puts "render new"
         render :new

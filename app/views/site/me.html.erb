@@ -3,25 +3,5 @@
 
 <div class="me-message"><h2>THIS IS ME!</h2></div>
 
-<div class="row">	
-	<div class="large-12 columns">
-		<div class="findby"><h3>Find me by Todi:</h3></div>
 
-
-		<%= link_to image_tag("card_happy.png", class: "mini_todi"),user_messages_path(@user, :emotion_type => :happy) %>
-		
-		<%= link_to image_tag("card_love.png",  class: "mini_todi"),user_messages_path(@user, :emotion_type => :love)  %>
-
-		<%= link_to image_tag("card_omg.png",   class: "mini_todi"),user_messages_path(@user, :emotion_type => :omg)   %>
-
-		<%= link_to image_tag("card_sad.png",   class: "mini_todi"),user_messages_path(@user, :emotion_type => :sad)   %>
-
-		<%= link_to image_tag("card_grumpy.png",class: "mini_todi"),user_messages_path(@user, :emotion_type => :grumpy) %>
-
-		<%= link_to image_tag("card_confused.png",class: "mini_todi"),user_messages_path(@user,:emotion_type => :confused) %>
-
-		<%= link_to image_tag("card_tired.png", class: "mini_todi"),user_messages_path(@user, :emotion_type => :tired)  %>
-
-		<%= link_to image_tag("card_stoked.png",class: "mini_todi"),user_messages_path(@user, :emotion_type => :stoked) %>
-	</div>
-</div>	
+<%= render partial: "byemotion" %>
