@@ -95,7 +95,7 @@ nav ul li {
 	font-family: Georgia, sans-serif;
 	font-style: italic; }
 
-.results{
+.results, .change-account-text{
 	margin-bottom: 30px; }
 
 .user-details{

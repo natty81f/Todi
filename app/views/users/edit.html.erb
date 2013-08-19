@@ -2,11 +2,16 @@
 
 <section>
 	<div class="form-area">	
-			<div class="large-12 columns">
-				<div class="account"><h2>ACCOUNT</h2></div>
+			<div class="small-12 columns">
+				<div class="account"><h2>ACCOUNT</h2></div>	
 			</div>	
 
+			<div class="large-12 columns change-account-text">
+				Change your basic account setting.
+			</div>
+
 			<%= form_for @user, url: user_path(@user), method: :put do |f| %>
+				
 				<div class="large-12 columns">
 				<%= f.text_field :email , placeholder: @user.email %>
 				</div>
