@@ -1,5 +1,6 @@
 class SiteController < ApplicationController
 # before_action :is_authenticated, only: [ :index ]
+skip_before_filter :require_login
 
 	def index
 		@user = current_user
