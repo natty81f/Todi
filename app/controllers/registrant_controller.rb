@@ -37,7 +37,6 @@ class RegistrantController < ApplicationController
 
     if @user.save
       @registrant.destroy
-      session [:user_id] = @user.id # <--------New line
       redirect_to root_url, notice: "Thank you for registering!"
     else
       flash.now[:error] = @user.errors

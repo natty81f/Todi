@@ -1,11 +1,11 @@
 <header>
 	<div class="row">	
-		<%= link_to image_tag("brand.png", class: "brand"), root_path(@user) %>
+		<%= link_to image_tag("brand.png", class: "brand"), current_user ? root_path(current_user) : login_path %>
 		
 			<nav class="menu_right">
 				<ul>
-					<li><%= link_to 'Account', edit_user_path(@user) %></li>
-					<li><%= link_to 'Me', me_path %></li>
+					<li><%= link_to 'Account', edit_user_path(current_user) if current_user %></li>
+					<li><%= link_to 'Me', me_path if current_user %></li>
 					<li><%= link_to 'Sign In', login_path %>
 						<ul>
 							<li>

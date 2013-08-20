@@ -7,7 +7,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//# require turbolinks
 //= require zepto
 //= require custom.modernizr
 //= require foundation.min
