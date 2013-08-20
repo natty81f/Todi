@@ -1,23 +1,29 @@
 ;(function($) {
 
 	$.noty.layouts.top = {
-		name: 'top',
+		name: 'topRight',
 		options: {},
 		container: {
-			object: '<ul id="noty_top_layout_container" />',
-			selector: 'ul#noty_top_layout_container',
+			object: '<ul id="noty_topRight_layout_container" />',
+			selector: 'ul#noty_topRight_layout_container',
 			style: function() {
 				$(this).css({
-					top: 0,
-					left: '5%',
+					top: 90,
+					right: 20,
 					position: 'fixed',
-					width: '90%',
+					width: '300px',
 					height: 'auto',
 					margin: 0,
 					padding: 0,
 					listStyleType: 'none',
-					zIndex: 9999999
+					zIndex: 10000000
 				});
+
+				if (window.innerWidth < 600) {
+					$(this).css({
+						right: 5
+					});
+				}
 			}
 		},
 		parent: {
@@ -26,7 +32,8 @@
 			css: {}
 		},
 		css: {
-			display: 'none'
+			display: 'none',
+			width: '310px'
 		},
 		addClass: ''
 	};
