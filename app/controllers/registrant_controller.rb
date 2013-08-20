@@ -13,7 +13,7 @@ class RegistrantController < ApplicationController
     if @registrant.save
       RegistrantMailer.registrant_email(@registrant).deliver
 
-      redirect_to root_url, notice: "We've sent you a registration email. Look for it."
+      redirect_to root_url, notice: "A registration email has been sent to you."
     else
       flash.now[:error] = "Please enter a valid email address and try again."
       render :new
