@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
 
 	def new
     if @user
-       @message = @user.messages.build
+       @message = @user.messages.build  
     end
   end
 

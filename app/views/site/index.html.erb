@@ -47,11 +47,15 @@
 
 		</div>	
 		<!-- if current_user.nil? == false, this line is same as line of code below --> 
-			<% if !!current_user  %>
+			<% if !!current_user %>
+					
 					<div id="msg-modal" class="reveal-modal">
 					  <%= render partial: "messages/new", locals: { user: @user , message: @message} %>
 					  <a class="close-reveal-modal">&#215;</a>
 					</div>
+
+			<%  else %>
+					<% flash[:error] = "You need to sign in or sign up before continuing." %>	
 			<% end %>
 	
 	
