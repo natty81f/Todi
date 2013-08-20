@@ -53,7 +53,7 @@ nav>ul>li {
 	font-family: 'Anton', sans-serif;
 	font-weight: normal; }
 
-.sign_in, .account{
+.sign_in{
 	margin-top: 13px; }
 
 .forgot_password{
@@ -80,25 +80,30 @@ li{
 nav ul li {
 	background: #F21F55; }
 
-.findby h3{
-	/*margin: 0 0 25px 25px;*/
+.findby h4{
 	font-family: Georgia, sans-serif;
 	font-style: italic; }	
 
 .mini_todi{
 	margin: 21px; }	
 
-/*	Me Page Starts------------------------*/
-.find_by_results h3, .find_by_results h4{
+/*	Me Page and results page Starts------------------------*/
+.find_by_results h3{ 
 	margin-top: 30px;
-	margin-bottom: 40px;
 	font-family: Georgia, sans-serif;
 	font-style: italic; }
 
+.find_by_results h4{
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+	margin-bottom: 40px; }
+
+.find_by_results{
+	margin-bottom: 60px; }
+
 .results, .change-account-text{
-	margin-bottom: 30px; }
+	margin-bottom: 20px; }
 
 .user-details{
 	color: #03A4EC;
-	display: inline;
-}
+	display: inline; }
