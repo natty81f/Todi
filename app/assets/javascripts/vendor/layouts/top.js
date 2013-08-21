@@ -33,7 +33,7 @@
 		},
 		css: {
 			display: 'none',
-			width: '310px'
+			width: '300px'
 		},
 		addClass: ''
 	};

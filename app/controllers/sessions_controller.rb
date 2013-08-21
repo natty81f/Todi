@@ -19,7 +19,6 @@ end
 
 def destroy
   session[:user_id] = nil
-  redirect_to root_path
-  # redirect_to root_path, notice: "You've successfully logged out!"
+  redirect_to root_path, notice: "You've successfully logged out!"
 end
 end
