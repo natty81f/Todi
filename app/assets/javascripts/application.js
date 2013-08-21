@@ -13,4 +13,3 @@
 //= require foundation.min
 //= require foundation.reveal
 //= require_tree .
-

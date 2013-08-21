@@ -49,7 +49,7 @@ nav>ul>li {
 	max-width: 32rem;
 	margin: 4rem auto 4rem; }
 
-.form-area h2, #tw h3{
+.form-area h2 {
 	font-family: 'Anton', sans-serif;
 	font-weight: normal; }
 
@@ -93,10 +93,11 @@ nav ul li {
 	font-family: Georgia, sans-serif;
 	font-style: italic; }
 
-.find_by_results h4{
+.find_by_results h4, #tw h5{
 	font-family: Georgia, sans-serif;
 	font-style: italic;
-	margin-bottom: 40px; }
+	margin-bottom: 40px;
+	/*margin-top: 20px;*/ }
 
 .find_by_results{
 	margin-bottom: 60px; }
