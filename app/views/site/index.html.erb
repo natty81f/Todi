@@ -57,5 +57,24 @@
 			  <% else %>
 					<% flash[:error] = "You need to sign in or sign up before continuing." %>
 			 <% end %>
-	
+
+	<script>
+		$(function() {
+	$('.reveal-modal').each(function(index, item) {
+		var id = $(item).attr('id');
+		$('[data-reveal-id='+id+']').click(function(event) {
+			var emoticon = event.currentTarget.dataset.emoticon;
+			$('#emoticon').val(emoticon);
+			console.log(emoticon);
+			$(item).foundation('reveal', 'open');
+			$("#emotion_type").val(emoticon);
+			return false;
+		});
+	});
+	$('body').on('click', '.reveal-modal-bg, .close-reveal-modal', function(event){
+		$('.reveal-modal').foundation('reveal', 'close');
+	});
+});
+
+	</script>
 	
