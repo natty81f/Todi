@@ -20,3 +20,5 @@ User.create!([
  }
 
 ])
+
+Registrant.create!(email: "momo@momo.com")
