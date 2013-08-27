@@ -21,4 +21,4 @@ User.create!([
 
 ])
 
-Registrant.create!(email: "momo@momo.com")
+Registrant.create!(email: "simon@simon.com")
