@@ -36,8 +36,8 @@ class RegistrantController < ApplicationController
     @user.email = @registrant.email
 
     if @user.save 
-      @registrant.destroy || @user = current_user
-      redirect_to root_url, notice: "Thank you for registering!"
+      @registrant.destroy
+      render :template => 'sessions/create', notice: "Thank you for registering!"
     else
       flash.now[:error] = @user.errors
       render :edit
