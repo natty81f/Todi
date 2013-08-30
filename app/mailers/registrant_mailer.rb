@@ -1,5 +1,5 @@
 class RegistrantMailer < ActionMailer::Base
-  default from: "hello@todi.com"
+  default from: "sign-up@todi.com"
 
   def registrant_email(registrant)
     @registrant = registrant
