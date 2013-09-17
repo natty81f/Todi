@@ -12,4 +12,5 @@
 //= require custom.modernizr
 //= require foundation.min
 //= require foundation.reveal
+//= require foundation.topbar
 //= require_tree .
