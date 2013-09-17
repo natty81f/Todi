@@ -16,6 +16,7 @@ Todi::Application.routes.draw do
   delete  'logout' => 'sessions#destroy', as: :logout
 
   get      'me'   => 'site#me'
+  get      'home' => 'site#home'
 
   resources :users do
     resources :messages 

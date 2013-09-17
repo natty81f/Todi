@@ -1,0 +1,81 @@
+<%= render partial: "layouts/header" %>
+	
+		
+	<div class="brand-message"><h2>TODAY I FELT</h2></div>
+			
+	
+		<div class="row">	
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="happy"><%= image_tag "happy.png" %></a>
+				<h4>HAPPY</h4>
+			</div>
+
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="love"><%= image_tag "love.png" %></a>
+				<h4>LOVE</h4>
+			</div>
+
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="omg"><%= image_tag "omg.png" %></a>
+				<h4>OMG!!!</h4>
+			</div>
+
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="sad"><%= image_tag "sad.png" %></a>
+				<h4>SAD</h4>
+			</div>	
+		</div>
+
+
+		<div class="row">
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="grumpy"><%= image_tag "grumpy.png" %></a>
+				<h4>GRUMPY</h4>
+			</div>
+
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="confused"><%= image_tag "confused.png" %></a>
+				<h4>CONFUSED</h4>
+			</div>
+
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="tired"><%= image_tag "tired.png" %></a>
+				<h4>TIRED</h4>
+			</div>
+
+			<div class="large-3 columns image-wrapper">
+				<a href="" data-reveal-id="msg-modal" data-emoticon="stoked"><%= image_tag "stoked.png" %></a>
+				<h4>STOKED</h4>
+			</div>
+		</div>	
+			
+		<!-- if current_user.nil? == false, this line is same as line of code below --> 
+			  <% if !!current_user %> 
+					
+					<div id="msg-modal" class="reveal-modal">
+					  <%= render partial: "messages/new", locals: { user: @user , message: @message} %>
+					  <a class="close-reveal-modal">&#215;</a>
+					</div>
+
+			  <% else %>
+					<% flash[:error] = "You need to sign in or sign up before continuing." %>
+			 	<% end %>
+
+<script>
+	$(function() {
+		$('.reveal-modal').each(function(index, item) {
+			var id = $(item).attr('id');
+			$('[data-reveal-id='+id+']').click(function(event) {
+				var emoticon = event.currentTarget.dataset.emoticon;
+				$('#emoticon').val(emoticon);
+				console.log(emoticon);
+				$(item).foundation('reveal', 'open');
+				$("#emotion_type").val(emoticon);
+				return false;
+			});
+		});
+		$('body').on('click', '.reveal-modal-bg, .close-reveal-modal', function(event){
+			$('.reveal-modal').foundation('reveal', 'close');
+		});
+	});
+</script>

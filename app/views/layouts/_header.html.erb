@@ -1,7 +1,8 @@
 <nav class="top-bar">
 	<ul class="title-area">
 		<li class="name">
-			<%= link_to image_tag("brand.png"), current_user ? root_path(current_user) : login_path %>
+			<%= link_to image_tag("brand.png"), current_user ? home_path(current_user) : root_path %>
+			<!-- link_to image_tag("brand.png"), current_user ? home_path(current_user) : login_path  -->
 		</li>
 		<li class="toggle-topbar menu-icon"><a href=""><span></span></a></li>
 	</ul>
@@ -22,8 +23,8 @@
 	</div>
 </nav>
 
-
-<!-- $(document).foundation(); -->
-
+<script>
+$(document).foundation();
+</script>
 
 

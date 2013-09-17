@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     puts params[:user_id]
     
     session[:user_id] = user.id
-    redirect_to root_path, notice: "You've successfully logged in!"
+    redirect_to home_path, notice: "You've successfully logged in!"
   else
     flash.now[:error] = "Wrong email or password. Try again?"
     render :new
