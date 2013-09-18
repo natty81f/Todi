@@ -12,6 +12,10 @@ body {
   position: relative;
   cursor: default; }
 
+.todi-tag p{
+	text-align: center;
+	padding: 7px; }  
+
 .brand-message h2, .me-message h2{
 	text-align: center;
 	margin-bottom: 50px;
@@ -76,3 +80,9 @@ textarea{
 .user-details{
 	color: #03A4EC;
 	display: inline; }
+
+/*About page	*/
+.about{
+	margin: 35px 15px 0;
+}
+
