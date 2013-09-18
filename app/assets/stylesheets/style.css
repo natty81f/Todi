@@ -56,7 +56,7 @@ textarea{
 .mini_todi{
 	margin: 21px; }	
 
-/*	Me Page and results page Starts------------------------*/
+/*	Me Page and results page starts */
 .find_by_results h3{ 
 	margin-top: 30px;
 	font-family: Georgia, sans-serif;
@@ -65,8 +65,7 @@ textarea{
 .find_by_results h4, #tw h5{
 	font-family: Georgia, sans-serif;
 	font-style: italic;
-	margin-bottom: 40px;
-	/*margin-top: 20px;*/ }
+	margin-bottom: 40px; }
 
 .find_by_results{
 	margin-bottom: 60px; }

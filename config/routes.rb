@@ -12,7 +12,6 @@ Todi::Application.routes.draw do
   post    'login'  => 'sessions#create'
 
   # Logout
-  # get     'logout' => 'sessions#destroy'
   delete  'logout' => 'sessions#destroy', as: :logout
 
   get      'me'   => 'site#me'

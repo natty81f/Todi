@@ -2,8 +2,10 @@ class SiteController < ApplicationController
 # before_action :is_authenticated, only: [ :index ]
 
 	def index
-		# @user = current_user
-		# @message = Message.new
+		# if current_user.nil? works too but line below is proper Ruby 
+		# if !!!current_user 
+			# flash.now[:error] = "You need to sign in or sign up before continuing."		
+		# end
 	end
 
 	# GET / - Me Page
