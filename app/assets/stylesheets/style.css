@@ -16,7 +16,7 @@ body {
 	text-align: center;
 	padding: 7px; }  
 
-.brand-message h2, .me-message h2{
+.brand-message h2{
 	text-align: center;
 	margin-bottom: 50px;
 	font-family: 'Anton', sans-serif;
@@ -53,14 +53,20 @@ textarea{
 	color: black;
 	text-decoration: underline; }
 
+/*	Me Page and results page starts */
+.me-message h2{	
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-weight: normal; }	
+
 .findby h4{
 	font-family: Georgia, sans-serif;
-	font-style: italic; }	
+	font-style: italic; 
+	text-align: center; 
+	margin-bottom: 60px;
+	color: gray;
+	letter-spacing: 1px; }
 
-.mini_todi{
-	margin: 21px; }	
-
-/*	Me Page and results page starts */
 .find_by_results h3{ 
 	margin-top: 30px;
 	font-family: Georgia, sans-serif;
@@ -69,7 +75,8 @@ textarea{
 .find_by_results h4, #tw h5{
 	font-family: Georgia, sans-serif;
 	font-style: italic;
-	margin-bottom: 40px; }
+	margin-bottom: 40px;
+	color: gray; }
 
 .find_by_results{
 	margin-bottom: 60px; }
@@ -83,6 +90,5 @@ textarea{
 
 /*About page	*/
 .about{
-	margin: 35px 15px 0;
-}
+	margin: 35px 15px 0; }
 
