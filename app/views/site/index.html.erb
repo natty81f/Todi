@@ -8,7 +8,7 @@
 			
 		<div class="row">	
 			<div class="large-3 columns image-wrapper">
-				<%= image_tag "happy.png" %>
+				<a href="" data-reveal-id="hey"><%= image_tag "happy.png" %></a>
 				<h4>HAPPY</h4>
 			</div>
 
@@ -50,5 +50,24 @@
 				<h4>STOKED</h4>
 			</div>
 		</div>	
-		
 
+			<div id="hey" class="reveal-modal">
+        <%= render partial: "layouts/intro" %>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+<script>		
+$(function() {
+	$('.reveal-modal').each(function(index, item) {
+		var id = $(item).attr('id');
+		$('[data-reveal-id='+id+']').click(function(event) {
+			$(item).foundation('reveal', 'open');
+			return false;
+		});
+	});
+	$('body').on('click', '.reveal-modal-bg, .close-reveal-modal', function(event){
+		$('.reveal-modal').foundation('reveal', 'close');
+	});
+
+});
+</script>	

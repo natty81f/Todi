@@ -12,6 +12,10 @@ body {
   position: relative;
   cursor: default; }
 
+.todi-links{
+	color: #F21F55;
+} 
+
 .todi-tag p{
 	text-align: center;
 	padding: 7px; }  
