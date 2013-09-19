@@ -12,10 +12,11 @@ Todi::Application.routes.draw do
   post    'login'  => 'sessions#create'
 
   # Logout
-  # get     'logout' => 'sessions#destroy'
   delete  'logout' => 'sessions#destroy', as: :logout
 
   get      'me'   => 'site#me'
+  get      'about'=> 'site#about'
+  get      'home' => 'site#home'
 
   resources :users do
     resources :messages 

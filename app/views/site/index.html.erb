@@ -1,27 +1,31 @@
 <%= render partial: "layouts/header" %>
 	
+	<div class="todi-tag">
+		<p>A digital diary for busy people. Record your daily musings and thoughts.</p>
+	</div>
 		
 	<div class="brand-message"><h2>TODAY I FELT</h2></div>
 			
-	
+	<a href="" data-reveal-id="intro">
+
 		<div class="row">	
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="happy"><%= image_tag "happy.png" %></a>
+				<%= image_tag "happy.png" %>
 				<h4>HAPPY</h4>
 			</div>
 
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="love"><%= image_tag "love.png" %></a>
+				<%= image_tag "love.png" %>
 				<h4>LOVE</h4>
 			</div>
 
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="omg"><%= image_tag "omg.png" %></a>
+				<%= image_tag "omg.png" %>
 				<h4>OMG!!!</h4>
 			</div>
 
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="sad"><%= image_tag "sad.png" %></a>
+				<%= image_tag "sad.png" %>
 				<h4>SAD</h4>
 			</div>	
 		</div>
@@ -29,48 +33,39 @@
 
 		<div class="row">
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="grumpy"><%= image_tag "grumpy.png" %></a>
+				<%= image_tag "grumpy.png" %>
 				<h4>GRUMPY</h4>
 			</div>
 
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="confused"><%= image_tag "confused.png" %></a>
+				<%= image_tag "confused.png" %>
 				<h4>CONFUSED</h4>
 			</div>
 
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="tired"><%= image_tag "tired.png" %></a>
+				<%= image_tag "tired.png" %>
 				<h4>TIRED</h4>
 			</div>
 
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="msg-modal" data-emoticon="stoked"><%= image_tag "stoked.png" %></a>
+				<%= image_tag "stoked.png" %>
 				<h4>STOKED</h4>
 			</div>
 		</div>	
-			
-		<!-- if current_user.nil? == false, this line is same as line of code below --> 
-			  <% if !!current_user %> 
-					
-					<div id="msg-modal" class="reveal-modal">
-					  <%= render partial: "messages/new", locals: { user: @user , message: @message} %>
-					  <a class="close-reveal-modal">&#215;</a>
-					</div>
 
-			  <% else %>
-					<% flash[:error] = "You need to sign in or sign up before continuing." %>
-			 <% end %>
+	</a>
 
-	<script>
-		$(function() {
+			<div id="intro" class="reveal-modal">
+        <%= render partial: "layouts/intro" %>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+<script>		
+$(function() {
 	$('.reveal-modal').each(function(index, item) {
 		var id = $(item).attr('id');
 		$('[data-reveal-id='+id+']').click(function(event) {
-			var emoticon = event.currentTarget.dataset.emoticon;
-			$('#emoticon').val(emoticon);
-			console.log(emoticon);
 			$(item).foundation('reveal', 'open');
-			$("#emotion_type").val(emoticon);
 			return false;
 		});
 	});
@@ -78,5 +73,4 @@
 		$('.reveal-modal').foundation('reveal', 'close');
 	});
 });
-</script>
-	
+</script>	

@@ -19,7 +19,7 @@ class MessagesController < ApplicationController
     if @user
       if @message = @user.messages << Message.new(message_params)
         @user.save
-        redirect_to root_path, notice: "You've created a new message!"
+        redirect_to home_path, notice: "You've created a new message!"
       else
         puts "render new"
         render :new 
@@ -41,7 +41,6 @@ class MessagesController < ApplicationController
 
   def get_message
     if @user
-      
       head :not_found unless @message = @user.messages.find(params[:id])
     end
   end

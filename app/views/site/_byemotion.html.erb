@@ -1,22 +1,29 @@
 <div class="row">	
-		<div class="large-12 columns">
-		<div class="findby"><h4>Find me by Todi:</h4></div>
-
-
-		<%= link_to image_tag("card_happy.png", class: "mini_todi"),user_messages_path(@user, :emotion_type => :happy) %>
 		
-		<%= link_to image_tag("card_love.png",  class: "mini_todi"),user_messages_path(@user, :emotion_type => :love)  %>
+		<div class="findby small-12 columns"><h4>Show messages by Todi:</h4></div>
 
-		<%= link_to image_tag("card_omg.png",   class: "mini_todi"),user_messages_path(@user, :emotion_type => :omg)   %>
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_happy.png", class: "mini_todi"),user_messages_path(@user, :emotion_type => :happy) %></div>
 
-		<%= link_to image_tag("card_sad.png",   class: "mini_todi"),user_messages_path(@user, :emotion_type => :sad)   %>
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_love.png",  class: "mini_todi"),user_messages_path(@user, :emotion_type => :love)  %></div>
 
-		<%= link_to image_tag("card_grumpy.png",class: "mini_todi"),user_messages_path(@user, :emotion_type => :grumpy) %>
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_omg.png",   class: "mini_todi"),user_messages_path(@user, :emotion_type => :omg)   %></div>
 
-		<%= link_to image_tag("card_confused.png",class: "mini_todi"),user_messages_path(@user,:emotion_type => :confused) %>
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_sad.png",   class: "mini_todi"),user_messages_path(@user, :emotion_type => :sad)   %></div>
 
-		<%= link_to image_tag("card_tired.png", class: "mini_todi"),user_messages_path(@user, :emotion_type => :tired)  %>
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_grumpy.png",class: "mini_todi"),user_messages_path(@user, :emotion_type => :grumpy) %></div>
 
-		<%= link_to image_tag("card_stoked.png",class: "mini_todi"),user_messages_path(@user, :emotion_type => :stoked) %>
-	</div>
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_confused.png",class: "mini_todi"),user_messages_path(@user,:emotion_type => :confused) %></div>
+
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_tired.png", class: "mini_todi"),user_messages_path(@user, :emotion_type => :tired)  %></div>
+
+		<div class="small-3 columns image-wrapper">
+		<%= link_to image_tag("card_stoked.png",class: "mini_todi"),user_messages_path(@user, :emotion_type => :stoked) %></div>
+	
 </div>	

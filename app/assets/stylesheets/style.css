@@ -12,25 +12,15 @@ body {
   position: relative;
   cursor: default; }
 
-header{
- 	background: #F21F55;
- 	height: 60px;
- 	margin-bottom: 35px;
- 	-webkit-box-shadow: 0px 6px 15px rgba(50, 50, 50, 0.32);
-  -moz-box-shadow: 0px 6px 15px rgba(50, 50, 50, 0.32);
-  box-shadow: 0px 6px 15px rgba(50, 50, 50, 0.32); } 
+.todi-links{
+	color: #F21F55;
+} 
 
-nav.menu_right{
-	float: right;
-	font-size: 1.1em; }
+.todi-tag p{
+	text-align: center;
+	padding: 7px; }  
 
-nav>ul>li {
-	display: block;
-	float: left;
-	color: white;
-	margin: 15px 17px 0 0; }
-
-.brand-message h2, .me-message h2{
+.brand-message h2{
 	text-align: center;
 	margin-bottom: 50px;
 	font-family: 'Anton', sans-serif;
@@ -67,27 +57,20 @@ textarea{
 	color: black;
 	text-decoration: underline; }
 
-nav ul ul {
-	display: none; }
-
-nav ul li:hover > ul {
-	display: block;
-	margin: 18px 0 0 0; }
-
-li{
-	list-style: none; }
-
-nav ul li {
-	background: #F21F55; }
+/*	Me Page and results page starts */
+.me-message h2{	
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-weight: normal; }	
 
 .findby h4{
 	font-family: Georgia, sans-serif;
-	font-style: italic; }	
+	font-style: italic; 
+	text-align: center; 
+	margin-bottom: 60px;
+	color: gray;
+	letter-spacing: 1px; }
 
-.mini_todi{
-	margin: 21px; }	
-
-/*	Me Page and results page Starts------------------------*/
 .find_by_results h3{ 
 	margin-top: 30px;
 	font-family: Georgia, sans-serif;
@@ -97,7 +80,7 @@ nav ul li {
 	font-family: Georgia, sans-serif;
 	font-style: italic;
 	margin-bottom: 40px;
-	/*margin-top: 20px;*/ }
+	color: gray; }
 
 .find_by_results{
 	margin-bottom: 60px; }
@@ -108,3 +91,8 @@ nav ul li {
 .user-details{
 	color: #03A4EC;
 	display: inline; }
+
+/*About page	*/
+.about{
+	margin: 35px 15px 0; }
+
