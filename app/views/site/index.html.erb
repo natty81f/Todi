@@ -6,9 +6,11 @@
 		
 	<div class="brand-message"><h2>TODAY I FELT</h2></div>
 			
+	<a href="" data-reveal-id="intro">
+
 		<div class="row">	
 			<div class="large-3 columns image-wrapper">
-				<a href="" data-reveal-id="hey"><%= image_tag "happy.png" %></a>
+				<%= image_tag "happy.png" %>
 				<h4>HAPPY</h4>
 			</div>
 
@@ -51,7 +53,9 @@
 			</div>
 		</div>	
 
-			<div id="hey" class="reveal-modal">
+	</a>
+
+			<div id="intro" class="reveal-modal">
         <%= render partial: "layouts/intro" %>
         <a class="close-reveal-modal">&#215;</a>
       </div>
@@ -68,6 +72,5 @@ $(function() {
 	$('body').on('click', '.reveal-modal-bg, .close-reveal-modal', function(event){
 		$('.reveal-modal').foundation('reveal', 'close');
 	});
-
 });
 </script>	
