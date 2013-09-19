@@ -1,12 +1,11 @@
 Todi:
 ========
 
-An app where you chose an icon(Todi face: happy, sad, confused, etc.) which represents your mood of the day. Based on the icon you chose you will then write a message(today I was… or today I learned) that will be saved to the database. Later you will be able to search your history and pull results by:
+A digital diary for busy people.
 
-- date (you can select a range: start date to end date)
-- moods (Todi face: happy, sad, tired, etc.)
+This app is based upon the idea that people love to record their daily lives but don't necessarily have the time or desire to write a novel or blog post about it.
 
-Future features: 
+Simple and quick, almost intuitive way for people to write about their daily musings, experiences and mood. A sort of digital diary for the busy modern world.
 
-- Share this Todi message card with your friends.
-- Send  a report of your emotion_type (moods) to your email.
+
+
