@@ -12,30 +12,30 @@ body {
   position: relative;
   cursor: default; }
 
-.todi-links{
+.todi-links {
 	color: #F21F55;
-} 
+}
 
-.todi-tag p{
+.todi-tag p {
 	text-align: center;
-	padding: 7px; }  
+	padding: 7px; }
 
-.brand-message h2{
+.brand-message h2 {
 	text-align: center;
 	margin-bottom: 50px;
 	font-family: 'Anton', sans-serif;
 	font-weight: normal; }
 
-.image-wrapper img{
+.image-wrapper img {
 	display: block;
 	margin: 0 auto; }
 
-.image-wrapper h4{
+.image-wrapper h4 {
 	text-align: center;
 	font-family: 'Anton', sans-serif;
 	font-weight: normal; }
 
-.form-area{
+.form-area {
 	max-width: 32rem;
 	margin: 4rem auto 4rem; }
 
@@ -48,7 +48,7 @@ body {
 
 .forgot_password{
 	text-align: right;
-	font-size: .92em; }	
+	font-size: .92em; }
 
 textarea{
 	margin: 0 0 1em 0; }
@@ -58,41 +58,41 @@ textarea{
 	text-decoration: underline; }
 
 /*	Me Page and results page starts */
-.me-message h2{	
+.me-message h2 {
 	text-align: center;
 	font-family: 'Anton', sans-serif;
-	font-weight: normal; }	
+	font-weight: normal; }
 
-.findby h4{
+.findby h4 {
 	font-family: Georgia, sans-serif;
-	font-style: italic; 
-	text-align: center; 
+	font-style: italic;
+	text-align: center;
 	margin-bottom: 60px;
 	color: gray;
 	letter-spacing: 1px; }
 
-.find_by_results h3{ 
+.find_by_results h3 {
 	margin-top: 30px;
 	font-family: Georgia, sans-serif;
 	font-style: italic; }
 
-.find_by_results h4, #tw h5{
+.find_by_results h4, #tw h5 {
 	font-family: Georgia, sans-serif;
 	font-style: italic;
 	margin-bottom: 40px;
 	color: gray; }
 
-.find_by_results{
+.find_by_results {
 	margin-bottom: 60px; }
 
 .results, .change-account-text{
 	margin-bottom: 20px; }
 
-.user-details{
+.user-details {
 	color: #03A4EC;
 	display: inline; }
 
 /*About page	*/
-.about{
+.about {
 	margin: 35px 15px 0; }
 

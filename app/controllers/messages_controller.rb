@@ -6,6 +6,10 @@ class MessagesController < ApplicationController
   def index
   # @message = @user.messages.find_by_emotion_type(params[:emotion_type])
     @messages = current_user.messages.select { |m| m.emotion_type == params[:emotion_type] }
+      if @messages.empty?
+        then 
+          flash.now[:error] = "Oops, you don't have any messges yet."
+      end  
   end
 
 	def new

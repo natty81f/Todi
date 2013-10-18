@@ -6,24 +6,22 @@ class UsersController < ApplicationController
 
 	def edit
 		@user = User.find(params[:id])
-	end	
-
+	end
 
 	def update
 		@user = User.find_by_id params[:id]
 		@user.update_attributes(user_params)
 		redirect_to root_url, notice: "You've successfully updated your account!"
-	end	
+	end
 
 
 
 	def user_params
-    params.require( :user ).permit( 
+    params.require( :user ).permit(
     	:email,
-    	:password, 
+    	:password,
     	:password_confirmation,
     	:username,
-    	:name
-      )
+    	:name )
   end
 end

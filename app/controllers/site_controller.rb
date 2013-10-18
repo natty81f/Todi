@@ -1,5 +1,4 @@
 class SiteController < ApplicationController
-# before_action :is_authenticated, only: [ :index ]
 
 	def index
 		# if current_user.nil? works too but line below is proper Ruby 
